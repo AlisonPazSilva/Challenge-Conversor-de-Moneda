@@ -1,88 +1,70 @@
 # Challenge-Conversor-de-Moneda
-Se crea un conversor de monedas utilizando una API.
-# Conversor de Monedas en Java
+# 💰 Conversor de Monedas  
 
-Este proyecto consiste en el desarrollo de un conversor de monedas utilizando Java y consumiendo una API de tasas de cambio. Es un desafío planteado en clase por la instructora Génesys Rondón, resaltando la importancia de conocer las tasas de cambio en un mundo globalizado.
+## 📌 Descripción  
+Este proyecto es un **conversor de monedas interactivo** desarrollado en Java, que permite a los usuarios convertir valores entre distintas monedas utilizando una API de tasas de cambio en tiempo real.  
 
-## 🚀 Características
+Además, almacena un **historial de conversiones** de forma persistente en un archivo `.txt`, permitiendo a los usuarios visualizar conversiones previas en cada ejecución.  
 
-- Conversión de diferentes monedas mediante un menú de opciones.
-- Consumo de la API de Exchange Rate para obtener los datos de conversión.
-- Implementación de buenas prácticas de desarrollo ágil.
-- Gestión del proyecto a través de Trello.
-- Personalización del proyecto según las necesidades del estudiante.
+## ⚙️ Tecnologías utilizadas  
+- **Java 17**  
+- **IntelliJ IDEA**  
+- **HttpClient** para solicitudes API  
+- **Gson** para manejo de JSON  
+- **java.time** para marcas de tiempo  
+- **Archivos `.txt`** para almacenamiento persistente  
 
-## 📋 Requisitos
+## 🚀 Funcionalidades  
+✔ Conversión de monedas en tiempo real.  
+✔ Historial de conversiones con fecha y hora.  
+✔ Persistencia del historial en un archivo `.txt`.  
+✔ Menú interactivo para selección de monedas.  
+✔ Validaciones de entrada para evitar errores.  
 
-Antes de comenzar, asegúrate de contar con lo siguiente:
+## 🏗 Estructura del proyecto  
+Challenge Conversor de Monedas/ │── src/ │   │── ConversorMoneda.java │   │── HistorialConversiones.java │   │── ExchangeRateInteractive.java │   │── ExchangeRateJsonParser.java │── gson-2.10.1.jar │── historial_conversiones.txt │── README.md
+✔ `ConversorMoneda.java` → Clase principal del conversor.  
+✔ `HistorialConversiones.java` → Maneja y almacena el historial de conversiones.  
+✔ `ExchangeRateInteractive.java` → Manejo interactivo de tasas de cambio.  
+✔ `ExchangeRateJsonParser.java` → Análisis de respuestas API.  
 
-- Conocimientos previos en **Java** y **orientación a objetos**.
-- Instalación de **Java JDK** en tu sistema.
-- Acceso a la documentación de la API de Exchange Rate.
-- Una **API Key** válida para realizar consultas.
-- Herramientas como **Trello** para la gestión del proyecto.
+## 🔧 Instalación y ejecución  
+### 1️⃣ Clonar el repositorio  
+```bash
+git clone https://github.com/usuario/conversor-moneda.git
+```
+2️⃣ Importar en IntelliJ IDEA
+- Abrir IntelliJ IDEA → File > Open → Seleccionar la carpeta del proyecto.
+- Agregar dependencias (como gson-2.10.1.jar si es necesario).
 
-## 🛠 Instalación
+3️⃣ Ejecutar el programa
+- Asegurar que ConversorMoneda.java es la clase principal.
+- Presionar Run.
+- ¡Listo para convertir monedas! 💰🚀
 
-1. Clona este repositorio en tu máquina local:
-
-   ```bash
-   git clone https://github.com/tu_usuario/conversor_monedas.git
-
-  
-2. Navega al directorio del proyecto:
-  
-  
-  cd conversor_monedas
-
-3.  Configura tu API Key en el archivo de configuración.
-4.  Compila y ejecuta la aplicación:
-
-   
-   javac ConversorMonedas.java
-   java ConversorMonedas
-
-   
-📖 Uso
-- Inicia la aplicación desde la terminal.
-- Selecciona la moneda de origen y destino.
-- Ingresa el monto a convertir.
-- Obtén el resultado basado en las tasas de cambio actuales.
-
-📌 Documentación
-Para una correcta implementación, es esencial leer la documentación de la API de Exchange Rate. Puedes encontrarla en:
-Exchange Rate API
-
-
-🏗 Metodología
-Este proyecto recomienda el uso de prácticas de desarrollo ágil, dividiendo tareas en Trello para una mejor organización y progreso continuo.
+📜 Ejemplo de uso
+🌍 Bienvenido/a al Conversor de Moneda 🌍
+Seleccione la moneda base:
+1. USD (Dólar estadounidense)
+2. EUR (Euro)
+...
+Elija una opción válida: 1
+Ingrese la cantidad en USD: 200
+Resultado: 200 USD = 180 EUR
+¿Desea realizar otra conversión? (Sí/No): sí
 
 
-🙌 Contribuciones
-Las contribuciones son bienvenidas. Si deseas mejorar el proyecto, por favor, sigue estos pasos:
-- Realiza un fork del repositorio.
-- Crea una nueva rama con tu mejora:git checkout -b mejora-nueva
+📜 Historial de conversiones guardado
+[07/05/2025 23:57:12] 200 USD → 180 EUR
+[07/05/2025 23:58:30] 100 CLP → 0.11 USD
 
-- Realiza tus cambios y súbelos.
-- Abre un pull request con una descripción de los cambios.
 
-  
-  git checkout -b mejora-nueva
-  
-- Realiza tus cambios y súbelos.
-- Abre un pull request con una descripción de los cambios.  
+🤝 Contribuciones
+¡Se aceptan contribuciones! Si deseas mejorar el proyecto, crea un Pull Request o abre un Issue en el repositorio.
+📄 Licencia
+Este proyecto está bajo la MIT License, por lo que puedes usarlo libremente.
 
-📜 Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
-
-¡Anímate a mejorar y personalizar tu conversor de monedas! 🚀
-
-Si necesitas algún ajuste o personalización en el contenido, dime qué te gustaría modificar. ¡Espero que te sirva! 😊
+🎉 ¡Gracias por usar el conversor de monedas! 🚀💰✨
 
 
 
-
-
-  
-   
-   
